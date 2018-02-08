@@ -4,7 +4,7 @@ let webpack = require('webpack')
 module.exports = {
   entry: path.join(__dirname, 'modules/index.js'),
   output: {
-    library: 'ReactKeeper',
+    library: 'ReactKeeperEx',
     libraryTarget: 'umd'
   },
   externals: {

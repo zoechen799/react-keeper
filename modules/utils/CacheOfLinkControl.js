@@ -38,6 +38,16 @@ export const add = (srcRoute, _targetPath)=> {
   cacheStack.push(endChild || srcRoute)
 }
 
+export const remove = (srcRoute) => {
+  for(let i =0; i< cacheStack.length; i++){
+    if(cacheStack[i] === srcRoute){
+      cacheStack.splice(i, 1)
+      return true;
+    }
+  }
+  return false;
+}
+
 /** history listener */
 export const onHistoryChanged = (location)=> {
 
@@ -63,5 +73,7 @@ let targetPath = ''
 export default {
   add,
   isCached,
+  remove,
+  cacheStack,
   onHistoryChanged
 }

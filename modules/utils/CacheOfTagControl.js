@@ -47,7 +47,19 @@ export const isCached = (route)=> {
   return false
 }
 
+export const remove = (path) => {
+  for(let i =0; i< cachedRoute.length; i++){
+    if(cachedRoute[i].route.props.path === path+'>'){
+      cachedRoute.splice(i, 1)
+      return true;
+    }
+  }
+  return false;
+}
+
 export default {
   put,
-  isCached
+  isCached,
+  remove,
+  cachedRoute
 }

@@ -1,3 +1,5 @@
+# By Author: I focked and modified react-keeper in order to enhance cache control.
+
 # React-Keeper
   A routing library of React, but more than router.  
   React-Router is a great product, we learned a lot from it. But we truely faced many problems that React-Router doesn't resolve in real using, especially in mobile APPs.  
@@ -29,7 +31,7 @@
 
 ## Install
   ```
-  npm install react-keeper
+  npm install react-keeper-ex
   ```
 
 ## Features

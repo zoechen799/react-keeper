@@ -1,18 +1,18 @@
 {
-  "name": "react-keeper",
-  "version": "2.1.1",
+  "name": "react-keeper-ex",
+  "version": "2.1.6",
   "description": "A Strong Routing Library of React",
-  "homepage": "https://github.com/vifird/react-keeper",
-  "bug": "https://github.com/vifird/react-keeper/issues",
-  "email": "vifirde@gmail.com",
+  "homepage": "https://github.com/zoechen799/react-keeper",
+  "bug": "https://github.com/zoechen799/react-keeper/issues",
+  "email": "zoechen799@163.com",
   "scripts": {
     "start": "npm run example",
     "example": "cross-env NODE_ENV=development node example/serve false",
     "test": "cross-env NODE_ENV=test karma start",
     "test-umd": "node __test__/serve",
     "build": "npm run build-umd && npm run build-min",
-    "build-umd": "cross-env NODE_ENV=production webpack --config webpack.build.js modules/index.js umd/react-keeper.js",
-    "build-min": "cross-env NODE_ENV=production webpack --config webpack.build.js -p modules/index.js umd/react-keeper.min.js",
+    "build-umd": "cross-env NODE_ENV=production webpack --config webpack.build.js modules/index.js umd/react-keeper-ex.js",
+    "build-min": "cross-env NODE_ENV=production webpack --config webpack.build.js -p modules/index.js umd/react-keeper-ex.min.js",
     "precompile": "rimraf npm/__build__/**.js && rimraf npm/__build__/**/**.js",
     "compile": "cross-env NODE_ENV=production babel modules --extensions .js --out-dir npm/__build__",
     "prepublish": "npm run compile",
@@ -28,7 +28,6 @@
     "react-dom": "^15.0.0 || ^16.0.0 || ^0.14.0"
   },
   "devDependencies": {
-    "react-keeper": "latest",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
     "babel-eslint": "^7.2.3",
